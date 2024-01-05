@@ -6,7 +6,7 @@
 .banner {
     width: 100%;
     height: 190vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/aot.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/wall7.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -394,7 +394,7 @@ button:hover {
     overflow: hidden;
 }
 .about-image img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
     transition: 0.5s ease;
