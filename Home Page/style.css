@@ -1,0 +1,691 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner {
+    width: 100%;
+    height: 190vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("img/aot.webp");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+}
+.logo:hover{
+    color: orangered;
+}
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    cursor: pointer;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .20s;
+}
+.navbar ul li:hover::after {
+    transform-origin: center;
+    transform: scaleX(1);
+    width: 100%;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: center;
+}
+.content h1 {
+    font-size: 60px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+.content button {
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    border: 2px solid orangered;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    background-color: orangered;
+    height: 100%;
+    width: 0%;
+    position: absolute; 
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+}
+button:hover {
+    border: none;
+}
+/* New Page CSS */
+.blog-section{
+    width: 100%;
+}
+.blog-section .section-content {
+    width: 85%;
+    margin: 20px auto;
+}
+.blog-section .section-content .slam-dunk-title {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+.blog-section .section-content .slam-dunk-title h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif Calibri;
+    color: orangered;
+}
+.blog-section .section-content .slam-dunk-title p {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif Calibri;
+    color: white;
+    margin-top: 20px;
+}
+.blog-section .section-content .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    margin: 25px auto;
+
+}
+/* Card 1 */
+.blog-section .section-content .cards .card {
+    width: 100%;
+    position: relative;
+    background-color: lightgray;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.blog-section .section-content .cards .card img {
+    width: 100%;
+    height: 250px;
+}
+.blog-section .section-content .cards .card .article {
+    padding: 15px 20px;
+}
+.blog-section .section-content .cards .card .article h4 {
+    font-size: 24px;
+    color: orangered;
+}
+.blog-section .section-content .cards .card .article p {
+    font-size: 14px;
+    color: black;
+    margin: 10px 0;
+    font-family: Tahoma;
+}
+.blog-section .section-content .cards .card .blog-view {
+    padding-bottom: 20px;
+}
+.blog-section .section-content .cards .card .blog-view a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: goldenrod;
+    padding: 8px 15px;
+    margin-left: 20px;
+    color: black;
+    border-radius: 20px;
+}
+.blog-section .section-content .cards .card .blog-view a:hover {
+    background-color: black;
+    color: white;
+}
+.blog-section .section-content .cards .card .posted-date p {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inlin-block;
+    background-color: goldenrod;
+    padding: 6px 15px;
+}
+/* Card 2 */
+.blog-section .section-content .cards .card2 {
+    width: 100%;
+    position: relative;
+    background-color: lightgray;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.blog-section .section-content .cards .card2 img {
+    width: 100%;
+    height: 250px;
+}
+.blog-section .section-content .cards .card2 .article {
+    padding: 15px 20px;
+}
+.blog-section .section-content .cards .card2 .article h4 {
+    font-size: 24px;
+    color: orangered;
+}
+.blog-section .section-content .cards .card2 .article p {
+    font-size: 14px;
+    color: black;
+    margin: 10px 0;
+    font-family: Tahoma;
+}
+.blog-section .section-content .cards .card2 .blog-view {
+    padding-bottom: 20px;
+}
+.blog-section .section-content .cards .card2 .blog-view a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: goldenrod;
+    padding: 8px 15px;
+    margin-left: 20px;
+    color: black;
+    border-radius: 20px;
+}
+.blog-section .section-content .cards .card2 .posted-date p {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: goldenrod;
+    padding: 6px 15px;
+}
+.blog-section .section-content .cards .card2 .blog-view a:hover {
+    background-color: black;
+    color: white;
+}
+/* Card 3 */
+.blog-section .section-content .cards .card3{
+    width: 100%;
+    position: relative;
+    background-color: lightgray;
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.blog-section .section-content .cards .card3 img {
+    width: 100%;
+    height: 250px;
+}
+.blog-section .section-content .cards .card3 .article {
+    padding: 15px 20px;
+}
+.blog-section .section-content .cards .card3 .article h4 {
+    font-size: 24px;
+    color: orangered;
+}
+.blog-section .section-content .cards .card3 .article p {
+    font-size: 14px;
+    color: black;
+    margin: 10px 0;
+    font-family: Tahoma;
+}
+.blog-section .section-content .cards .card3 .blog-view {
+    padding-bottom: 20px;
+}
+.blog-section .section-content .cards .card3 .blog-view a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: goldenrod;
+    padding: 8px 15px;
+    margin-left: 20px;
+    border-radius: 20px;
+    color: black;
+}
+.blog-section .section-content .cards .card3 .blog-view a:hover {
+    background-color: black;
+    color: white;
+}
+.blog-section .section-content .cards .card3 .posted-date p {
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: goldenrod;
+    padding: 6px 15px;
+}
+/* News Page Media Screen */
+@media screen and (max-width: 992px){
+    .blog-section .section-content .cards {
+        grid-template-columns: repeat(2 1fr);
+    }
+}
+@media screen and (max-width: 768px){
+    .banner {
+        width: 100%;
+        height: 300vh;
+    }
+    .navbar ul li {
+        position: relative;
+        right: -40px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        cursor: pointer;
+    }
+    .navbar ul li::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 5px;
+        background-color: orangered;
+        width: 0;
+        transform: scaleX(0);
+        transform-origin: center;
+        transition: 0.2s ease;
+    }
+    .navbar ul #home:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:55%;
+    }
+    .navbar ul #newspage:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:55%;
+    }
+    .navbar ul #about:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:85%;
+    }
+    .navbar ul #gallery:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:80%;
+    }
+    .navbar ul #testimony:hover::after{
+        transform: scaleX(1);
+        transform-origin: center;
+        width:100%;
+    }
+    .navbar ul li a {
+        color: white;
+    }
+    .blog-section .section-content .cards{
+        grid-template-columns: 1fr;
+    }
+}
+/* About us CSS */
+.about-section{
+    width: 100%;
+}
+.heading {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+.heading h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: red;
+}
+.heading p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 35px;
+}
+.container {
+    width: 90%;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+.about-image:hover img{
+    transform: scale(1.2);
+}
+.about-content {
+    flex: 1;
+}
+.about-content h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: red;
+}
+.about-content p{
+    font-size: 18px;
+    line-height: 1.8;
+    color: white;
+}
+.about-content .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+.about-content .read-more:hover {
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    .heading {
+        padding: 0 20px;
+    }
+    .heading h1 {
+        font-size: 36px;
+    }
+    .heading p {
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container {
+        padding: 0px;
+    }
+    .about {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about-image {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .about-content {
+        padding: 0px;
+        font-size: 16px;
+    }
+    .about-content .read-more{
+        font-size: 16px;
+    }
+}
+/* Gallery CSS */
+.gallery{
+    margin-bottom: 200px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.gallery input {
+    display: none;
+}
+.gallery .gallery-container{
+    width: 100%;
+    text-align: center;
+}
+.gallery h1{
+    font-weight: normal;
+    position: relative;
+    font-size: 35px;
+    margin: 40px 0;
+}
+.gallery h1::before{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 210px;
+    height: 3px;
+    background-color: red;
+    transform: translateX(-50%);
+    animation: animate 5s linear infinite;
+}
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100px;
+    }
+    100%{
+        width: 200px;
+    }
+}
+.gallery .top-content {
+    background-color: white;
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+}
+.gallery .gallery-container h1 {
+    color: white;
+}
+.gallery h3{
+    height: 100%;
+    line-height: 60px;
+    padding: 0 50px;
+    background-color: lightgray;
+    color: red;
+}
+.gallery label{
+    display: inline-block;
+    height: 100%;
+    margin: 0 20px;
+    line-height: 60px;
+    font-size: 18px;
+    color: red;
+    cursor: pointer;
+    transition: color .5s;
+}
+.gallery label:hover {
+    color: black;
+}
+.gallery .photo-gallery {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+.gallery .pic {
+    position: relative;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
+    transition: .5s;
+}
+.gallery .pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: .5s;
+}
+.gallery .pic::before {
+    content: "Photo Gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    margin-top: 100px;
+    opacity: 0;
+    transform: .3s;
+    transition-delay: .2s;
+    z-index: 1;
+}
+.gallery .pic::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 0, 0,.4);
+    transition: .2s;
+}
+.gallery .pic:hover::after {
+    height: 100%;
+}
+.gallery .pic:hover::before {
+    margin-top: 0;
+    opacity: 1;
+}
+.gallery #check1:checked ~ .gallery-container .photo-gallery .pic {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+    transition: .5s;    
+}
+.gallery #check2:checked ~ .gallery-container .photo-gallery .Events{
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+.gallery #check2:checked ~ .gallery-container .photo-gallery .Boning, 
+.gallery #check2:checked ~ .gallery .photo-gallery .Outing {
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+.gallery #check3:checked ~.gallery-container .photo-gallery .Bonding {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+.gallery #check3:checked ~.gallery-container .photo-gallery .Events,
+.gallery #check3:checked ~.gallery-container .photo-gallery .Outing{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+.gallery #check4:checked ~.gallery-container .photo-gallery .Bonding {
+    opacity: 1;
+    transform: scale(1);
+    position: relative;
+}
+.gallery #check4:checked ~.gallery-container .photo-gallery .Events,
+.gallery #check4:checked ~.gallery-container .photo-gallery .Outing{
+    opacity: 1;
+    transform: scale(0);
+    position: absolute;
+    transition: 0s;
+}
+@media screen and (max-width: 992px){
+    .gallery .photo-gallery {
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+}
+/* Gallery Media Screen */
+@media screen and (max-width:768px ){
+    .gallery h1 {
+        font-weight: normal;
+        position: relative;
+        font-size: 28px;
+        margin: 40px 0;
+    }
+    .gallery h1::before {
+        content: "";
+        position: absolute;
+        bottom: -7px;
+        left:50%;
+        width: 50px;
+        height: 3px;
+        background-color: red;
+        transform: translateX(-50%);
+        animation: gallery 5s linear infinite;
+    }
+    @keyframes gallery {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 100px;
+        }
+        100%{
+            width: 170px;
+        }
+    }
+    .gallery h3 {
+        display: none;
+    }
+    .gallery label {
+        height: 100%;
+        font-size: 13px;
+        color: red;
+        cursor: pointer;
+        transition: color .3s;
+    }
+    .gallery label:hover {
+        color: black;
+    }
+    .gallery .photo-gallery {
+        width: 80%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
